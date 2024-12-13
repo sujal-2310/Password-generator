@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(162,130,163);
+  background: linear-gradient(90deg, rgba(162,130,163,1) 21%, rgba(187,189,152,1) 50%, rgba(86,137,166,1) 82%);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 12%;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 46px;
+}
+
+.container h1 span {
+  color: #011a0fda;
+  border-bottom: 5px solid #011a0fda;
+  padding-bottom: 7px;
+}
+
+.display {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.display img {
+  width: 33px;
+  cursor: pointer;
+}
+
+.display input {
+  border: 0;
+  outline: 0;
+  font-size: 25px;
+  font-family: sans-serif;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.container button {
+  border: 0;
+  outline: 0;
+  background: #0eb064;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 130px;
+  width: 350px;
+}
+
+.container button img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.container button:hover {
+  background: #10ba6b;
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+  .container {
+    margin: 5% auto;
+    max-width: 600px;
+  }
+
+  .container h1 {
+    font-size: 52px;
+  }
+
+  .display {
+    padding: 26px;
+  }
+
+  .display input {
+    font-size: 28px;
+  }
+
+  .container button {
+    font-size: 24px;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .container {
+    margin: 8%;
+    width: 95%;
+  }
+
+  .container h1 {
+    font-size: 35px;
+    font-weight:500;
+   
+  }
+
+  .display {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .display input {
+    font-size: 23px;
+    margin: 10px 0 0 0;
+    width: 100%;
+  }
+
+  .display img {
+    align-self: flex-end;
+    width: 27px;
+  }
+
+  .container button {
+    font-size: 18px;
+    padding: 14px 37px;
+    margin-left: 45px;
+    width: 220px;
+    height: 65px;
+  }
+
+}
